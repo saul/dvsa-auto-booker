@@ -1,8 +1,7 @@
 require 'capybara/dsl'
 require 'capybara/poltergeist'
 
-Capybara.default_driver = :selenium
-#Capybara.default_driver = :poltergeist
+Capybara.default_driver = :poltergeist
 
 class Slot
   attr_reader :id, :time, :date
@@ -35,7 +34,7 @@ class BookingDriver
     end
 
     if current_centre == centre_desired
-      if !desirable_slots.any? { |slot| slot.date > current_time.to_date }
+      if !desirable_slots.any? { |slot| slot.date > current_date }
         puts '[!] Available slots are no more desirable than the currently booked slot'
         return false
       end
