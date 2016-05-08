@@ -13,5 +13,5 @@ options = {
   latest_date: DateTime.parse(ENV.fetch('TEST_LATEST_DATE'))
 }
 
-puts '[*] Running'
+puts "[*] Run started at #{DateTime.now}"
 driver.run options
