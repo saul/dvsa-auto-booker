@@ -2,7 +2,7 @@
 
 This small Ruby script scrapes the DVSA appointment cancellations site and automatically re-books practical tests if a more appropriate one becomes available. The tool will also automatically re-book if a more desirable (i.e., closer to your latest desired date) slot becomes available.
 
-Note that repeated scrapings within a short time frame can trigger DVSA's IP-based CAPTCHA. The exact
+**Note:** Repeated scrapings within a short time frame can trigger DVSA's IP-based CAPTCHA.
 
 ## Installation
 
